@@ -14,9 +14,7 @@ Brainglobe has been thought to help quantifying the intensity of brain regions f
     - `structures.csv`: Region names, IDs, acronyms, and parent structure, from the allen atlas project (included in this repo).
     - `volumes.csv`: Region volumes, computed by brainreg. Use the one detected in 561nm image if possible.
 
-2. **Intensity Quantification:** Run the `quantification.ipynb` notebook. This notebook loads the input data, calculates the total intensity for each brain![bargraph](https://github.com/user-attachments/assets/98865dcf-78ff-4002-![bargraph](https://github.com/user-attachments/assets/00faa8df-d561-4570-8a30-8a1683270d1c)
-96fb-a967e0a73b3e)
- region, and saves the results to `quanti.csv`.
+2. **Intensity Quantification:** Run the `quantification.ipynb` notebook. This notebook loads the input data, calculates the total intensity for each brain region, and saves the results to `quanti.csv`.
 
 3. **Visualization:**
     - Use `bar_graphs.ipynb` to create bar graph visualizations of the quantification results.
