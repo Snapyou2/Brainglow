@@ -1,9 +1,9 @@
 ![logo](https://github.com/user-attachments/assets/6c3b36fa-6584-4be8-9d20-a1da1d79b20c)
 
 
-# Brainglow : Brain regions intensity quantification and visualization
+# Brain regions intensity quantification and visualization
 
-Brainglobe has been thought to help quantifying the intensity of brain regions from registered atlas on lightsheet microscopy, and provides visualizations using bar graphs and interactive sunburst diagrams.
+Brainglow has been thought to help quantifying the intensity of brain regions from registered atlas on lightsheet microscopy, and provides visualizations using bar graphs and interactive sunburst diagrams.
 
 ![interactive sunburst charts](https://github.com/user-attachments/assets/ea4d10c8-181a-4e11-b631-c507b9d04040)
 
@@ -11,7 +11,7 @@ Brainglobe has been thought to help quantifying the intensity of brain regions f
 
 ## Usage
 
-1. **Input Files:** Prepare the following input files after running brainreg on every channel for your brain (signal and autofluorescence channels):
+1. **Input Files:** Prepare the following input files after running [brainreg](https://github.com/brainglobe/brainreg-napari) on every channel for your brain (signal and autofluorescence channels):
     - `registered_atlas.tiff`: Allen atlas labels mask by brainreg, can be obtained using a reference image like autofluorescence at 561nm
     - `downsampled.tiff`: Brain image that contains your target channel intensity signal, with high SNR if possible.
     - `structures.csv`: Region names, IDs, acronyms, and parent structure, from the allen atlas project (included in this repo).
@@ -40,3 +40,6 @@ pip install -r requirements.txt
 ## Hardware
 
 Brainglow uses Dask to parallelize processing tasks and will extensively use your CPU. RAM usage can go up to 30 GB for region intensity calculation, with 10um atlas registration. Use an appropriate computer or server.
+
+## Credits
+This code has been created in Bellone's lab, UNIGE.
