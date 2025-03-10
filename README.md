@@ -1,3 +1,6 @@
+![logo](https://github.com/user-attachments/assets/6c3b36fa-6584-4be8-9d20-a1da1d79b20c)
+
+
 # Brainglow : Brain regions intensity quantification and visualization
 
 Brainglobe has been thought to help quantifying the intensity of brain regions from registered atlas on lightsheet microscopy, and provides visualizations using bar graphs and interactive sunburst diagrams.
